@@ -1,0 +1,25 @@
+<templateSet group="Plone - ZCML">
+  <template name="ploneBrowserPage" value="&lt;browser:page&#10;    name=&quot;$name$&quot;&#10;    for=&quot;$for$&quot;&#10;    class=&quot;.$module_name$.$class_name$&quot;&#10;    allowed_interface=&quot;.$module_name$.I$class_name$&quot;&#10;    permission=&quot;$permission$&quot;&#10;/&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="for" expression="" defaultValue="&quot;*&quot;" alwaysStopAt="true" />
+    <variable name="module_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="class_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="permission" expression="enum(&quot;zope2.View&quot;,&quot;cmf.ManagePortal&quot;,&quot;cmf.ModifyPortalContent&quot;,&quot;cmf.ListFolderContents&quot;,&quot;zope2.AccessContentsInformation&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="ploneBrowserResourceDirectory" value="&lt;browser:resourceDirectory&#10;            name=&quot;$name$&quot;&#10;            directory=&quot;static&quot;&#10;    /&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="ploneAdapter" value="&lt;adapter factory=&quot;.$module_name$.$class_name$&quot;/&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="module_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="class_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+</templateSet>

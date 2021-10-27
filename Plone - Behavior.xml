@@ -1,0 +1,102 @@
+<templateSet group="Plone - Behavior">
+  <template name="ploneBehaviorThumbIconHandling" value="&lt;element value=&quot;plone.app.contenttypes.behaviors.thumb_icon.IThumbIconHandling&quot; /&gt;" description="Adds options to suppress thumbs(preview images) and/or icons and to override thumb size in listings or tables." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneBehaviorTableOfContents" value="&lt;element value=&quot;plone.app.contenttypes.behaviors.tableofcontents.ITableOfContents&quot; /&gt;" description="Table of contents." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneBehaviorShortName" value="&lt;element value=&quot;plone.app.dexterity.behaviors.id.IShortName&quot; /&gt;" description="Gives the ability to rename an item from its edit form." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneBehaviorSelectableConstrainTypes" value="&lt;element value=&quot;Products.CMFPlone.interfaces.constrains.ISelectableConstrainTypes&quot; /&gt;" description="Restrict the content types that can be added to folderish content" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneBehaviorRichText" value="&lt;element value=&quot;plone.app.contenttypes.behaviors.richtext.IRichText&quot; /&gt;" description="Rich text field with a WYSIWIG editor." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneBehaviorRelatedItems" value="&lt;element value=&quot;plone.app.relationfield.behavior.IRelatedItems&quot; /&gt;" description="Adds the Related items field to the Categorization fieldset." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneBehaviorPublication" value="&lt;element value=&quot;plone.app.dexterity.behaviors.metadata.IPublication&quot; /&gt;" description="Adds effective date and expiration date fields." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneBehaviorOwnership" value="&lt;element value=&quot;plone.app.dexterity.behaviors.metadata.IOwnership&quot; /&gt;" description="Adds creator, contributor, and rights fields." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneBehaviorNextPreviousToggle" value="&lt;element value=&quot;plone.app.dexterity.behaviors.nextprevious.INextPreviousToggle&quot; /&gt;" description="Allow items to have next previous navigation enabled." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneBehaviorNextPreviousEnabled" value="&lt;element value=&quot;plone.app.dexterity.behaviors.nextprevious.INextPreviousEnabled&quot; /&gt;" description="Enable next previous navigation for all items of this type. Not a form field provider." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneBehaviorNavigationRoot" value="&lt;element value=&quot;plone.app.layout.navigation.interfaces.INavigationRoot&quot; /&gt;" description="Make all items of this type a navigation root. Not a form field provider." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneBehaviorNameFromFileName" value="&lt;element value=&quot;plone.app.dexterity.behaviors.filename.INameFromFileName&quot; /&gt;" description="Automatically generate short URL name for content based on its primary field file name Not a form field provider." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneBehaviorLeadImage" value="&lt;element value=&quot;plone.app.contenttypes.behaviors.leadimage.ILeadImage&quot; /&gt;" description="Adds a LeadImage field like used for News item." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneBehaviorExcludeFromNavigation" value="&lt;element value=&quot;plone.app.dexterity.behaviors.exclfromnav.IExcludeFromNavigation&quot; /&gt;" description="Allow items to be excluded from navigation" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneBehaviorDublinCore" value="&lt;element value=&quot;plone.app.dexterity.behaviors.metadata.IDublinCore&quot; /&gt;" description="Adds standard metadata fields. Shortcut for (and same as) plone.basic + plone.categorization + plone.publication + plone.ownership)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneBehaviorCollection" value="&lt;element value=&quot;plone.app.contenttypes.behaviors.collection.Collection&quot; /&gt;" description="Collection behavior with querystring and other related fields." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneBehaviorCategorization" value="&lt;element value=&quot;plone.app.dexterity.behaviors.metadata.ICategorization&quot; /&gt;" description="Adds keywords and language fields." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneBehaviorBasic" value="&lt;element value=&quot;plone.app.dexterity.behaviors.metadata.IBasic&quot; /&gt;" description="Adds title and description fields." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneBehaviorAllowDiscussion" value="&lt;element value=&quot;plone.app.dexterity.behaviors.discussion.IAllowDiscussion&quot; /&gt;" description="Allow discussion on this item." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneBehaviorNameFromTitle" value="&lt;element value=&quot;plone.app.content.interfaces.INameFromTitle&quot; /&gt;" description="Automatically generate short URL name for content based on its initial title. Not a form field provider." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>

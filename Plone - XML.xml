@@ -1,0 +1,50 @@
+<templateSet group="Plone - XML">
+  <template name="ploneRegQueryField" value="&lt;records prefix=&quot;plone.app.querystring.field.$name$&quot;&#10;    interface='plone.app.querystring.interfaces.IQueryField'&gt;&#10;    &lt;value key=&quot;title&quot; i18n:translate=&quot;&quot;&gt;$title$&lt;/value&gt;&#10;    &lt;value key=&quot;description&quot; i18n:translate=&quot;&quot;&gt;$description$&lt;/value&gt;&#10;    &lt;value key=&quot;enabled&quot;&gt;$enabled$&lt;/value&gt;&#10;    &lt;value key=&quot;sortable&quot;&gt;$sortable$&lt;/value&gt;&#10;    &lt;value key=&quot;operations&quot;&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.int.is&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.int.lessThan&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.int.largerThan&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.date.lessThan&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.date.largerThan&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.date.between&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.date.lessThanRelativeDate&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.date.largerThanRelativeDate&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.date.today&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.date.afterToday&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.date.beforeToday&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.selection.is&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.selection.any&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.selection.all&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.string.contains&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.string.is&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.list.contains&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.boolean.isTrue&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.boolean.isFalse&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.path.isWithin&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.path.isWithinRelative&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.reference.is&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.string.currentUser&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.string.path&lt;/element&gt;&#10;        &lt;element&gt;plone.app.querystring.operation.string.relativePath&lt;/element&gt;&#10;    &lt;/value&gt;&#10;    &lt;value key=&quot;vocabulary&quot;&gt;$vocabulary$&lt;/value&gt;&#10;    &lt;value key=&quot;group&quot; i18n:translate=&quot;&quot;&gt;$group$&lt;/value&gt;&#10;&lt;/records&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="title" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="enabled" expression="enum(&quot;True&quot;,&quot;False&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="sortable" expression="enum(&quot;True&quot;,&quot;False&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="vocabulary" expression="" defaultValue="&quot;plone.app.vocabularies.PortalTypes&quot;" alwaysStopAt="true" />
+    <variable name="group" expression="enum(&quot;Text&quot;,&quot;Dates&quot;,&quot;Metadata&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneCatalogColumn" value="&lt;column value=&quot;$name$&quot; /&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneCatalogIndex" value="&lt;index name=&quot;$name$&quot; meta_type=&quot;$meta_type$&quot;&gt;&#10;    &lt;indexed_attr value=&quot;$name$&quot; /&gt;&#10;&lt;/index&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="meta_type" expression="enum(&quot;FieldIndex&quot;,&quot;KeywordIndex&quot;,&quot;DateIndex&quot;,&quot;BooleanIndex&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneRegCSS" value="&lt;stylesheet title=&quot;&quot;&#10;            id=&quot;$resource_id$&quot;&#10;            media=&quot;$media$&quot; &#10;            rel=&quot;stylesheet&quot; &#10;            rendering=&quot;$rendering$&quot;&#10;            cacheable=&quot;$cacheable$&quot; &#10;            compression=&quot;$compression$&quot; &#10;            cookable=&quot;$cookable$&quot;&#10;            enabled=&quot;$enabled$&quot; &#10;            expression=&quot;&quot;/&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="resource_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="media" expression="enum(&quot;screen&quot;,&quot;print&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="rendering" expression="enum(&quot;link&quot;,&quot;import&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="cacheable" expression="enum(&quot;True&quot;,&quot;False&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="compression" expression="enum(&quot;safe&quot;,&quot;none&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="cookable" expression="enum(&quot;True&quot;,&quot;False&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="enabled" expression="enum(&quot;True&quot;,&quot;False&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ploneRegJavascript" value="&lt;javascript&#10;        id=&quot;$resource_id$&quot;&#10;        cacheable=&quot;$cacheable$&quot; &#10;        compression=&quot;$compression$&quot; &#10;        cookable=&quot;$cookable$&quot;&#10;        enabled=&quot;$enabled$&quot; &#10;        expression=&quot;&quot;  &#10;        inline=&quot;$inline$&quot; /&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="resource_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="cacheable" expression="enum(&quot;True&quot;,&quot;False&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="compression" expression="enum(&quot;safe&quot;,&quot;none&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="cookable" expression="enum(&quot;True&quot;,&quot;False&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="enabled" expression="enum(&quot;True&quot;,&quot;False&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="inline" expression="enum(&quot;False&quot;,&quot;True&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>
