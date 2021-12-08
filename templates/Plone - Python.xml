@@ -1,5 +1,5 @@
 <templateSet group="Plone - Python">
-  <template name="ploneBoolField" value="$name$ = schema.Bool(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=$default$,&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneBoolField" value="$name$ = schema.Bool(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=$default$,&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -10,7 +10,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneAsciiField" value="$name$ = schema.ASCII(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneAsciiField" value="$name$ = schema.ASCII(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -21,7 +21,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneAsciiLineField" value="$name$ = schema.ASCIILine(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneAsciiLineField" value="$name$ = schema.ASCIILine(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -32,7 +32,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneBoolSingleCheckBoxField" value="# Make sure you import:&#10;# plone.app.z3cform.widget.SingleCheckBoxBoolFieldWidget&#10;directives.widget($name$=SingleCheckBoxBoolFieldWidget)&#10;$name$ = schema.Bool(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=$default$,&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneBoolSingleCheckBoxField" value="# Make sure you import:&#10;# plone.app.z3cform.widget.SingleCheckBoxBoolFieldWidget&#10;directives.widget($name$=SingleCheckBoxBoolFieldWidget)&#10;$name$ = schema.Bool(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=$default$,&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -43,7 +43,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneBytesField" value="$name$ = schema.Bytes(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneBytesField" value="$name$ = schema.Bytes(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -53,7 +53,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneBytesLineField" value="$name$ = schema.BytesLine(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneBytesLineField" value="$name$ = schema.BytesLine(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -64,7 +64,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneChoiceField" value="$name$ = schema.Choice(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    vocabulary='$vocabulary$',&#10;    # defaultFactory=$defaultvocab$,&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneChoiceField" value="$name$ = schema.Choice(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    vocabulary='$vocabulary$',&#10;    # defaultFactory=$defaultvocab$,&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -77,7 +77,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneDataGridField" value="# Make sure you import: collective.z3cform.datagridfield&#10;directives.widget($name$=datagridfield.DataGridFieldFactory)&#10;$name$ = schema.List(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    value_type=datagridfield.DictRow(&#10;        title=u'$tablerow$', schema=$ITableRowSchema$,&#10;    )&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneDataGridField" value="# Make sure you import: collective.z3cform.datagridfield&#10;directives.widget($name$=datagridfield.DataGridFieldFactory)&#10;$name$ = schema.List(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    value_type=datagridfield.DictRow(&#10;        title=u'$tablerow$', schema=$ITableRowSchema$,&#10;    )&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -87,31 +87,29 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneDateField" value="$name$ = schema.Date(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$,&#10;    # defaultFactory=$get_default$,&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneDateField" value="$name$ = schema.Date(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    readonly=$readonly$,&#10;    # defaultFactory=$get_default$,&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="required" expression="enum(&quot;False&quot;,&quot;True&quot;)" defaultValue="" alwaysStopAt="true" />
-    <variable name="default" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="readonly" expression="enum(&quot;False&quot;,&quot;True&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="get_default" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneDatetimeField" value="$name$ = schema.Datetime(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$,&#10;    # defaultFactory=$get_default$,&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneDatetimeField" value="$name$ = schema.Datetime(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    readonly=$readonly$,&#10;    # defaultFactory=$get_default$,&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="required" expression="enum(&quot;False&quot;,&quot;True&quot;)" defaultValue="" alwaysStopAt="true" />
-    <variable name="default" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="readonly" expression="enum(&quot;False&quot;,&quot;True&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="get_default" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneDecimalField" value="$name$ = schema.Decimal(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=$default$,&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneDecimalField" value="$name$ = schema.Decimal(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=$default$,&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -122,7 +120,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneDottedNameField" value="$name$ = schema.DottedName(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$,&#10;    # min_length=6,&#10;    # max_length=20,&#10;    # min_dots=1,&#10;    # max_dots=3,&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneDottedNameField" value="$name$ = schema.DottedName(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$,&#10;    # min_length=6,&#10;    # max_length=20,&#10;    # min_dots=1,&#10;    # max_dots=3,&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -133,7 +131,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneComputedField" value="@property&#10;def $title$(self):&#10;    return '{0} {1}'.format(&#10;        self.$firstname$,&#10;        self.$lastname$,&#10;    )&#10;&#10;@$title$.setter&#10;def $title$(self, value):&#10;    pass" toReformat="false" toShortenFQNames="true">
+  <template name="ploneComputedField" value="@property&#10;def $title$(self):&#10;    return '{0} {1}'.format(&#10;        self.$firstname$,&#10;        self.$lastname$,&#10;    )&#10;&#10;@$title$.setter&#10;def $title$(self, value):&#10;    pass" description="" toReformat="false" toShortenFQNames="true">
     <variable name="title" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="firstname" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="lastname" expression="" defaultValue="" alwaysStopAt="true" />
@@ -141,7 +139,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneFieldMode" value="# You have to import:&#10;# z3c.form.interfaces.IForm / z3c.form.interfaces.IEditForm&#10;directives.mode($interface$, $field_name$='$field_type$')" toReformat="false" toShortenFQNames="true">
+  <template name="ploneFieldMode" value="# You have to import:&#10;# z3c.form.interfaces.IForm / z3c.form.interfaces.IEditForm&#10;directives.mode($interface$, $field_name$='$field_type$')" description="" toReformat="false" toShortenFQNames="true">
     <variable name="interface" expression="enum(&quot;IForm&quot;,&quot;IEditForm&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="field_type" expression="enum(&quot;input&quot;,&quot;display&quot;,&quot;hidden&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -149,19 +147,19 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneFieldNoOmit" value="directives.no_omit('$field_name$')" toReformat="false" toShortenFQNames="true">
+  <template name="ploneFieldNoOmit" value="directives.no_omit('$field_name$')" description="" toReformat="false" toShortenFQNames="true">
     <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneFieldOmitted" value="directives.omitted('$field_name$')" toReformat="false" toShortenFQNames="true">
+  <template name="ploneFieldOmitted" value="directives.omitted('$field_name$')" description="" toReformat="false" toShortenFQNames="true">
     <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneFieldOrder" value="directives.order_$order$($field_name$='$other_field_name$')" toReformat="false" toShortenFQNames="true">
+  <template name="ploneFieldOrder" value="directives.order_$order$($field_name$='$other_field_name$')" description="" toReformat="false" toShortenFQNames="true">
     <variable name="order" expression="enum(&quot;before&quot;,&quot;after&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="other_field_name" expression="enum(&quot;another_field_name&quot;,&quot;IBasic.title&quot;,&quot;IDublinCore.title&quot;,&quot;IRichText.text&quot;,*)" defaultValue="" alwaysStopAt="true" />
@@ -169,7 +167,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneFieldPermission" value="directives.$read_write_permission$($field_name$='$permission$')" toReformat="false" toShortenFQNames="true">
+  <template name="ploneFieldPermission" value="directives.$read_write_permission$($field_name$='$permission$')" description="" toReformat="false" toShortenFQNames="true">
     <variable name="read_write_permission" expression="enum(&quot;read_permission&quot;,&quot;write_permission&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="permission" expression="enum(&quot;zope2.View&quot;,&quot;cmf.ManagePortal&quot;,&quot;cmf.ModifyPortalContent&quot;,&quot;cmf.ListFolderContents&quot;,&quot;zope2.AccessContentsInformation&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -177,27 +175,27 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneFieldWidget" value="# You have to import the widget&#10;# Check: https://docs.plone.org/external/plone.app.dexterity/docs/grok/reference/widgets.html#widgets  # NOQA: E501&#10;directives.widget($field_name$=$widget$)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneFieldWidget" value="# You have to import the widget&#10;# Check: https://docs.plone.org/external/plone.app.dexterity/docs/grok/reference/widgets.html#widgets  # NOQA: E501&#10;directives.widget($field_name$=$widget$)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="widget" expression="enum(&quot;TextWidget&quot;,&quot;RadioFieldWidget&quot;,&quot;CheckBoxFieldWidget&quot;,&quot;SingleCheckBoxBoolFieldWidget&quot;,&quot;OptgroupFieldWidget&quot;,&quot;TextLinesFieldWidget&quot;,&quot;WysiwygFieldWidget&quot;,&quot;SelectFieldWidget&quot;,&quot;AjaxSelectFieldWidget&quot;,&quot;RelatedItemsFieldWidget&quot;,&quot;QueryStringFieldWidget&quot;,&quot;LinkFieldWidget&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneFieldWidgetPatternOptions" value="directives.widget('$field_name$', pattern_options={'basePath': get_$field_name$_base_path, 'selectableTypes': ['Document']})" toReformat="false" toShortenFQNames="true">
+  <template name="ploneFieldWidgetPatternOptions" value="directives.widget('$field_name$', pattern_options={'basePath': get_$field_name$_base_path, 'selectableTypes': ['Document']})" description="" toReformat="false" toShortenFQNames="true">
     <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneFieldset" value="model.fieldset(&#10;    '$fieldset_name$',&#10;    label=_(u'$fieldset_label$'),&#10;    fields=[&#10;        'field1_name',&#10;        'field2_name',&#10;    ],&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneFieldset" value="model.fieldset(&#10;    '$fieldset_name$',&#10;    label=_(u'$fieldset_label$'),&#10;    fields=[&#10;        'field1_name',&#10;        'field2_name',&#10;    ],&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="fieldset_name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="fieldset_label" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneFileField" value="# Make sure you import: plone.namedfile&#10;form.widget($name$=NamedFileFieldWidget)&#10;$name$ = namedfile.NamedBlobFile(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneFileField" value="# Make sure you import: plone.namedfile&#10;form.widget($name$=NamedFileFieldWidget)&#10;$name$ = namedfile.NamedBlobFile(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -207,18 +205,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneFloatField" value="$name$ = schema.Float(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
-    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
-    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="required" expression="enum(&quot;False&quot;,&quot;True&quot;)" defaultValue="" alwaysStopAt="true" />
-    <variable name="default" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="readonly" expression="enum(&quot;False&quot;,&quot;True&quot;)" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="Python_Class" value="true" />
-    </context>
-  </template>
-  <template name="ploneFrozenSetField" value="$name$ = schema.FrozenSet(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    value_type=schema.TextLine(title=''),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneFloatField" value="$name$ = schema.Float(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -229,7 +216,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneIdField" value="$name$ = schema.Id(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneFrozenSetField" value="$name$ = schema.FrozenSet(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    value_type=schema.TextLine(title=''),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -240,17 +227,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneImageField" value="# Make sure you import: plone.namedfile&#10;form.widget($name$=NamedImageFieldWidget)&#10;$name$ = namedfile.NamedBlobImage(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
-    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
-    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="required" expression="enum(&quot;False&quot;,&quot;True&quot;)" defaultValue="" alwaysStopAt="true" />
-    <variable name="readonly" expression="enum(&quot;False&quot;,&quot;True&quot;)" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="Python_Class" value="true" />
-    </context>
-  </template>
-  <template name="ploneIntField" value="$name$ = schema.Int(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=$default$,&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneIdField" value="$name$ = schema.Id(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -261,7 +238,28 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneInterfaceField" value="$name$ = schema.InterfaceField(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneImageField" value="# Imports&#10;# from plone.directives import form&#10;# from plone.formwidget.namedfile import NamedImageFieldWidget&#10;# from plone.namedfile.field import NamedBlobImage&#10;form.widget($name$=NamedImageFieldWidget)&#10;$name$ = NamedBlobImage(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="required" expression="enum(&quot;False&quot;,&quot;True&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="readonly" expression="enum(&quot;False&quot;,&quot;True&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python_Class" value="true" />
+    </context>
+  </template>
+  <template name="ploneIntField" value="$name$ = schema.Int(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=$default$,&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="required" expression="enum(&quot;False&quot;,&quot;True&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="default" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="readonly" expression="enum(&quot;False&quot;,&quot;True&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python_Class" value="true" />
+    </context>
+  </template>
+  <template name="ploneInterfaceField" value="$name$ = schema.InterfaceField(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -272,7 +270,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneListField" value="$name$ = schema.List(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    value_type=schema.TextLine(&#10;        title=_(u&quot;$value$&quot;),&#10;    ),&#10;    required=$required$,&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneListField" value="$name$ = schema.List(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    value_type=schema.TextLine(&#10;        title=_(u&quot;$value$&quot;),&#10;    ),&#10;    required=$required$,&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -283,7 +281,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneMultiChoiceField" value="$name$ = schema.List(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    value_type=schema.Choice(&#10;        vocabulary='$vocabulary$'&#10;    ),&#10;    default=set([&#10;        'Folder',&#10;        'Image',&#10;        ]),&#10;    # defaultFactory=get_default_$name$,&#10;    required=$required$,&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneMultiChoiceField" value="$name$ = schema.List(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    value_type=schema.Choice(&#10;        vocabulary='$vocabulary$'&#10;    ),&#10;    default=set([&#10;        'Folder',&#10;        'Image',&#10;        ]),&#10;    # defaultFactory=get_default_$name$,&#10;    required=$required$,&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -294,7 +292,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="plonePasswordField" value="$name$ = schema.Password(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="plonePasswordField" value="$name$ = schema.Password(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -305,7 +303,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneRelationChoiceField" value="# Make sure to import: z3c.relationfield and plone.app.vocabularies.catalog.CatalogSource&#10;$name$ = relationfield.schema.RelationChoice(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    source=CatalogSource(&#10;        portal_type='$portal_type$',&#10;    ),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneRelationChoiceField" value="# Make sure to import: z3c.relationfield and plone.app.vocabularies.catalog.CatalogSource&#10;$name$ = relationfield.schema.RelationChoice(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    source=CatalogSource(&#10;        portal_type='$portal_type$',&#10;    ),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -317,7 +315,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneRelationListField" value="# Make sure to import: z3c.relationfield and plone.app.vocabularies.catalog.CatalogSource&#10;$name$ = relationfield.schema.RelationList(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    value_type=relationfield.schema.RelationChoice(&#10;        title=u'$Related$',&#10;        source=CatalogSource(&#10;            portal_type='$portal_type$',&#10;        ),&#10;    ),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneRelationListField" value="# Make sure to import: z3c.relationfield and plone.app.vocabularies.catalog.CatalogSource&#10;$name$ = relationfield.schema.RelationList(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    value_type=relationfield.schema.RelationChoice(&#10;        title=u'$Related$',&#10;        source=CatalogSource(&#10;            portal_type='$portal_type$',&#10;        ),&#10;    ),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -330,7 +328,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneRichTextField" value="# Make sure to import: from plone.app.textfield import RichText&#10;$name$ = RichText(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneRichTextField" value="# Make sure to import: from plone.app.textfield import RichText&#10;$name$ = RichText(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -341,7 +339,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneSourceTextField" value="$name$ = schema.SourceText(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneSourceTextField" value="$name$ = schema.SourceText(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -352,7 +350,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneTextField" value="$name$ = schema.Text(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneTextField" value="$name$ = schema.Text(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -363,7 +361,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneTextLineField" value="$name$ = schema.TextLine(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneTextLineField" value="$name$ = schema.TextLine(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -374,7 +372,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneTupleField" value="$name$ = schema.Tuple(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    value_type=schema.TextLine(title=u''),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneTupleField" value="$name$ = schema.Tuple(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    value_type=schema.TextLine(title=u''),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -385,7 +383,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneURIField" value="$name$ = schema.URI(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneURIField" value="$name$ = schema.URI(&#10;    title=_(u'$title$'),&#10;    description=_(u'$description$'),&#10;    required=$required$,&#10;    default=u'$default$',&#10;    readonly=$readonly$&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="title" expression="capitalize(name)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -396,29 +394,27 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneRedirect" value="return self.request.response.redirect($url$, status=301)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneRedirect" value="return self.request.response.redirect($url$, status=301)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="url" expression="" defaultValue="&quot;self.context.absolute_url()&quot;" alwaysStopAt="true" />
     <context>
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneAPIShowMessage" value="api.portal.show_message(&#10;    message=_(u&quot;$message$&quot;),&#10;    request=self.request,&#10;    type=&quot;$type$&quot;,&#10;)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneAPIShowMessage" value="api.portal.show_message(&#10;    message=_(u&quot;$message$&quot;),&#10;    request=self.request,&#10;    type=&quot;$type$&quot;,&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="type" expression="enum(&quot;info&quot;,&quot;warn&quot;,&quot;error&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneAPIImport" value="from plone import api" toReformat="false" toShortenFQNames="true">
+  <template name="ploneAPIImport" value="from plone import api" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
-      <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="ploneImportLogging" value="import logging&#10;&#10;&#10;logger = logging.getLogger(__name__)" toReformat="false" toShortenFQNames="true">
+  <template name="ploneImportLogging" value="import logging&#10;&#10;&#10;logger = logging.getLogger(__name__)" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
-      <option name="Python_Class" value="true" />
     </context>
   </template>
 </templateSet>
