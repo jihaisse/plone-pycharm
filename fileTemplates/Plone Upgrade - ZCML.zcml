@@ -1,0 +1,15 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup">
+    
+    <genericsetup:upgradeStep
+      source="${source}"
+      destination="${destination}"
+      title="${title}"
+      description="${description}"
+      profile="${package_name}:default"
+      handler=".upgrades.updateTo${destination}"
+      sortkey="1"
+    />
+      
+</configure>
